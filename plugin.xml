@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin xmlns:android="http://schemas.android.com/apk/res/android"
-	id="cordova-plugin-mediastore" version="0.7.0"
+	id="cordova-plugin-mediastorefiles" version="0.7.0"
 	xmlns="http://www.w3.org/ns/plugins">
 
-	<name>cordova-plugin-mediastore</name>
+	<name>cordova-plugin-mediastorefiles</name>
 
 	<engines>
 		<engine name="cordova" version=">=3.4.0"/>
 	</engines>
 
-	<asset src="www/Mediastore.js" target="js/Mediastore.js"/>
+	<asset src="www/MediaStoreFiles.js" target="js/MediaStoreFiles.js"/>
 
-	<js-module name="Mediastore" src="www/Mediastore.js">
-		<clobbers target="cordova.plugins.Mediastore"/>
+	<js-module name="MediaStoreFiles" src="www/MediaStoreFiles.js">
+		<clobbers target="cordova.plugins.MediaStoreFiles"/>
 	</js-module>
 
 	<platform name="android">
 		<config-file parent="/*" target="res/xml/config.xml">
-			<feature name="Mediastore">
-				<param name="android-package" value="pk.fida.mediastore.Mediastore"/>
+			<feature name="MediaStoreFiles">
+				<param name="android-package" value="come.MediaStoreFiles"/>
 			</feature>
 		</config-file>
 
@@ -30,6 +30,6 @@
 
 		</config-file>
 
-		<source-file src="src/android/pk/fida/mediastore/Mediastore.java" target-dir="src/pk/fida/mediastore/"/>
+		<source-file src="src/android/MediaStoreFiles.java" target-dir="src/ordova-plugin-mediastorefiles/MediaStoreFiles/"/>
 	</platform>
 </plugin>

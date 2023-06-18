@@ -7,7 +7,7 @@ This Cordova plugin enables file management using the Storage Access Framework a
 Use the Cordova CLI to install the plugin:
 
 ```bash
-cordova plugin add cordova-plugin-mediastore
+cordova plugin add cordova-plugin-mediastorefiles
 ```
 
 ## Methods
@@ -61,8 +61,8 @@ Retrieves the content URI of a file located in the specified folder and subfolde
 To call the plugin methods, use the following syntax:
 
 ```typescript
-cordova.plugins.Mediastore.<function>(params); // returns a Promise
-await cordova.plugins.Mediastore.<function>(params); // in an async function
+cordova.plugins.MediaStoreFiles.<function>(params); // returns a Promise
+await cordova.plugins.MediaStoreFiles.<function>(params); // in an async function
 ```
 
 Replace `<function>` with the desired method name and provide the appropriate parameters as specified in the method signature.
@@ -88,10 +88,6 @@ cordova.plugins.Mediastore.selectFolder(
 
 This example demonstrates how to use the `selectFolder` method to select a folder for file storage. The returned folder URI is then logged to the console.
 
-## License
-
-This plugin is released under the [MIT License](https://opensource.org/licenses/MIT).
-
 ## Contributions
 
-Contributions to improve `cordova-plugin-mediastore` are welcome. Please follow the [contribution guidelines](CONTRIBUTING.md) when submitting pull requests.
+Contributions to improve `cordova-plugin-mediastorefiles` are welcome. Please follow the [contribution guidelines](CONTRIBUTING.md) when submitting pull requests.

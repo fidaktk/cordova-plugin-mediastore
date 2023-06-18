@@ -1,22 +1,22 @@
 /*global cordova, module*/
 
-module.exports=(function(){
-	function callPromise(name){
-		return function(...params){
+module.exports = (function () {
+	function callPromise(name) {
+		return function (...params) {
 			return new Promise((
 				resolve,
 				reject
-			)=>cordova.exec(
+			) => cordova.exec(
 				resolve,
 				reject,
-				'Mediastore',
+				'MediaStoreFiles',
 				this.name,
 				params
 			));
-		}.bind({name});
+		}.bind({ name });
 	}
 
-	let exports={};
+	let exports = {};
 
 	[
 		'selectFolder',
@@ -30,7 +30,7 @@ module.exports=(function(){
 		'deleteFile',
 		'getFileName',
 		'getUri'
-	].forEach(action=>exports[action]=callPromise(action));
+	].forEach(action => exports[action] = callPromise(action));
 
 	return exports;
 })();

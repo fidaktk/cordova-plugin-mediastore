@@ -1,5 +1,5 @@
 {
-	"name":"cordova-plugin-mediastore",
+	"name":"cordova-plugin-mediastorefiles",
 	"version":"1.0.0",
 	"description":"Cordova Plugin to read and save files using the Storage Access Framework and Mediastore on Android only.",
 	"main":"index.js",
@@ -7,14 +7,14 @@
 		"test":"echo \"Error: no test specified\" && exit 1"
 	},
 	"cordova":{
-		"id":"cordova-plugin-mediastore",
+		"id":"cordova-plugin-mediastorefiles",
 		"platforms":[
 			"android"
 		]
 	},
 	"repository":{
 		"type":"git",
-		"url":"git+https://github.com/fidaktk/cordova-plugin-mediastore.git"
+		"url":"git+https://github.com/fidaktk/cordova-plugin-mediastorefiles.git"
 	},
 	"keywords":[
 		"cordova",
@@ -25,8 +25,6 @@
 	"author":"fida.pk",
 	"license":"",
 	"bugs":{
-		"url":"https://github.com/fidaktk/cordova-plugin-mediastore/issues"
-	},
-	"homepage":"https://github.com/customautosys/cordova-plugin-mediastore#readme",
-	"types":"www/Mediastore.d.ts"
+		"url":"https://github.com/fidaktk/cordova-plugin-mediastorefiles/issues"
+	}
 }

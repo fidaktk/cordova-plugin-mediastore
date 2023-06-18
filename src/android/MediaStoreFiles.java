@@ -1,4 +1,4 @@
-package pk.fida.mediastore;
+package com.mediastorefiles;
 
 import android.app.Activity;
 import android.content.ContentResolver;
@@ -37,7 +37,7 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.util.HashMap;
 
-public class Mediastore extends CordovaPlugin implements ValueCallback<String>{
+public class MediaStoreFiles extends CordovaPlugin implements ValueCallback<String>{
 	protected CallbackContext callbackContext;
 	protected HashMap<String,String> saveFileData=new HashMap<>();
 	protected CordovaInterface cordovaInterface;
