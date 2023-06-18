@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns:android="http://schemas.android.com/apk/res/android"
+	id="cordova-plugin-mediastore" version="0.7.0"
+	xmlns="http://www.w3.org/ns/plugins">
+
+	<name>cordova-plugin-mediastore</name>
+
+	<engines>
+		<engine name="cordova" version=">=3.4.0"/>
+	</engines>
+
+	<asset src="www/Mediastore.js" target="js/Mediastore.js"/>
+
+	<js-module name="Mediastore" src="www/Mediastore.js">
+		<clobbers target="cordova.plugins.Mediastore"/>
+	</js-module>
+
+	<platform name="android">
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="Mediastore">
+				<param name="android-package" value="pk.fida.mediastore.Mediastore"/>
+			</feature>
+		</config-file>
+
+		<config-file parent="/manifest" target="AndroidManifest.xml">
+			<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+			<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="29" />
+			<uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+			<uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+
+		</config-file>
+
+		<source-file src="src/android/pk/fida/mediastore/Mediastore.java" target-dir="src/pk/fida/mediastore/"/>
+	</platform>
+</plugin>
